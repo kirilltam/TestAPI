@@ -7,6 +7,7 @@ import org.json.JSONObject;
 import static io.restassured.RestAssured.given;
 
 public class ApiClient {
+    public String string;
     public static Response getObj(String url) {
         Response getObject = given()
                 .header("Content-type", "application/json")
